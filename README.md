@@ -38,8 +38,11 @@
 
 ## <a name="dependencies"></a>Dependencies
 Gems:
-* faker
-* figaro
+* 'faker'
+* 'figaro'
+* 'active_model_serializers'
+* 'faraday'
+* 'rack-cors', require: 'rack/cors'
 
 testing:
 * rspec-rails
@@ -50,6 +53,8 @@ testing:
 * launchy
 * database_cleaner
 * simplecov
+* 'vcr'
+* 'webmock'
 
 ## <a name="known-issues"></a>Known Issues
 
