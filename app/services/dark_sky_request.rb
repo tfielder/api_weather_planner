@@ -25,8 +25,4 @@ class DarkSkyRequest
   def parse(result)
     JSON.parse(result.body)
   end
-
-  def get_weather
-    parse(@dark_sky_response)
-  end
 end
