@@ -13,9 +13,9 @@
 * [Tech Stack List](#tech-stack-list)
 
 ## <a name="introduction"></a>Introduction
-  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? Weather Planner is a basic app that integrates the weather, apparel recommendations based on the weather, and daily events all in one place.
+  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? The Weather Planner API supports the Weather Planner app that integrates the weather, apparel recommendations based on the weather, and daily events all in one place.
 
-  Visit the app here:
+  Visit the api here:
 
   This app also makes use of the weather planner backend api.
   The backend api repo can be found here:
@@ -34,8 +34,18 @@
   3. Run `rails s`
   4. Navigate to `localhost:3000` in the address bar of your browser.
 
-## <a name="how-to-use"></a>How to Use
+  You will need to register with the Google API Geo service to get an api key.
+  Save your api key after you register and store it as an environment variable called 'google_api_key'.
 
+## <a name="how-to-use"></a>How to Use
+### Endpoints
+1. get 'api/v1/coordinates?location=<location of your choice>'
+  Note: you will need a Google Geo API key (see instructions).
+  The response will be formatted as a json object with a response status of 200 if successful.
+  e.g. response
+  <br>
+  ![screen shot 2019-01-05 at 10 09 26 pm](https://user-images.githubusercontent.com/38568909/50732369-dde21c00-1136-11e9-8015-aa4e660227b1.png)
+  <br>
 ## <a name="dependencies"></a>Dependencies
 Gems:
 * 'faker'
