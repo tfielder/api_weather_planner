@@ -5,7 +5,7 @@ describe 'api/v1/weather' do
     # sample_response = {}
 
     VCR.use_cassette('denver_weather_request') do
-      get '/api/v1/weather?lat=39.7392358lng=-104.990251'
+      get '/api/v1/weather?location=denver,co'
     end
 
     expect(response).to be_successful
