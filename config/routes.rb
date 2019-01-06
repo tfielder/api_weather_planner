@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/coordinates', to: 'coordinates#index'
       get '/weather', to: 'weather#index'
-      get '/location_results', to: 'results#index'
+      get '/location_results', to: 'location_results#index'
     end
   end
 end
