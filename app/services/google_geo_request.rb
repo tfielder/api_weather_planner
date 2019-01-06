@@ -34,18 +34,6 @@ class GoogleGeoRequest
     parse(@google_response)["results"][0]["geometry"]["location"]
   end
 
-  def get_city
-    @google_city = parse(@google_response)["results"][0]["address_components"][0]["long_name"]
-  end
-
-  def get_state
-    @google_city = parse(@google_response)["results"][0]["address_components"][2]["short_name"]
-  end
-
-  def get_country
-    @google_country = parse(@google_response)["results"][0]["address_components"][3]["long_name"]
-  end
-
   def get_address
     @google_address = parse(@google_response)["results"][0]["formatted_address"]
   end
