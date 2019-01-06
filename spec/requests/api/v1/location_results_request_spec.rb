@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-describe 'api/v1/results' do
+describe 'api/v1/location_results' do
   it 'returns a successful response' do
 
     VCR.use_cassette('denver_results_request') do
-      get '/api/v1/results?location=denver,co'
+      get '/api/v1/location_results?location=denver,co'
     end
 
     expect(response).to be_successful
