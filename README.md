@@ -36,16 +36,31 @@
 
   You will need to register with the Google API Geo service to get an api key.
   Save your api key after you register and store it as an environment variable called 'google_api_key'.
+  You will need to register with the Dark Sky API service to get an api key.
+  Save your api key after you register and store it as an environment variable called 'dark_sky_api_key'.
+
 
 ## <a name="how-to-use"></a>How to Use
 ### Endpoints
+Note: These endpoints may be accessed online. If you are running the project locally, you will need api keys.
+
 1. get 'api/v1/coordinates?location=<location of your choice>'
-  Note: you will need a Google Geo API key (see instructions).
+  Note: This endpoint requires a Google Geo API key.
   The response will be formatted as a json object with a response status of 200 if successful.
   e.g. response
   <br>
   ![screen shot 2019-01-05 at 10 09 26 pm](https://user-images.githubusercontent.com/38568909/50732369-dde21c00-1136-11e9-8015-aa4e660227b1.png)
   <br>
+
+2. get 'api/v1/weather?location=<location of your choice>'
+  Note: this endpoint requires both a Google Geo API key and a Dark Sky API key.
+  The response will be formatted as a json object with a response status of 200 if successful.
+  The main keys are "location" and "weather"
+  e.g. response
+  <br>
+  ![screen shot 2019-01-06 at 11 06 21 am](https://user-images.githubusercontent.com/38568909/50739875-3f3fd480-11a3-11e9-858b-60acdd1658eb.png)
+  <br>
+
 ## <a name="dependencies"></a>Dependencies
 Gems:
 * 'faker'
