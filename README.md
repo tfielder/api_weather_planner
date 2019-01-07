@@ -44,7 +44,7 @@
 ### Endpoints
 Note: These endpoints may be accessed online. If you are running the project locally, you will need api keys.
 
-1. get 'api/v1/coordinates?location=<location of your choice>'
+<!-- 1. get 'api/v1/coordinates?location=<location of your choice>'
   Note: This endpoint requires a Google Geo API key.
   The response will be formatted as a json object with a response status of 200 if successful.
   e.g. response
@@ -53,6 +53,14 @@ Note: These endpoints may be accessed online. If you are running the project loc
   <br>
 
 2. get 'api/v1/weather?location=<location of your choice>'
+  Note: this endpoint requires both a Google Geo API key and a Dark Sky API key.
+  The response will be formatted as a json object with a response status of 200 if successful.
+  The main keys are "location" and "weather"
+  e.g. response
+  <br>
+  ![screen shot 2019-01-06 at 11 06 21 am](https://user-images.githubusercontent.com/38568909/50739875-3f3fd480-11a3-11e9-858b-60acdd1658eb.png)
+  <br> -->
+1. get 'api/v1/location_results?location=<location of your choice>'
   Note: this endpoint requires both a Google Geo API key and a Dark Sky API key.
   The response will be formatted as a json object with a response status of 200 if successful.
   The main keys are "location" and "weather"
