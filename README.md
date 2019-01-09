@@ -65,8 +65,6 @@ Note: These endpoints may be accessed online. If you are running the project loc
   The main keys are "location" and "weather"
   e.g. response
   <br>
-  ![screen shot 2019-01-06 at 11 06 21 am](https://user-images.githubusercontent.com/38568909/50739875-3f3fd480-11a3-11e9-858b-60acdd1658eb.png)
-  <br>
 
 ## <a name="dependencies"></a>Dependencies
 Gems:
