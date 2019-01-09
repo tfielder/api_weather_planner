@@ -1,4 +1,4 @@
-# README
+# Whetherwise API README
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -9,7 +9,6 @@
 * [Known Issues](#known-issues)
 * [Running Tests](#running-tests)
 * [How To Contribute](#how-to-contribute)
-* [Schema Design](#schema-design)
 * [Tech Stack List](#tech-stack-list)
 
 ## <a name="introduction"></a>Introduction
@@ -17,9 +16,9 @@
 
   Visit the api here:
 
-  This app also makes use of the weather planner backend api.
-  The backend api repo can be found here:
-  And the backend live api can be found here:
+  This app also makes use of the weather planner live app found here: https://whetherwise.herokuapp.com/
+  The backend api repo can be found here: https://github.com/tfielder/api_weather_planner
+  And the backend live api can be found here: https://weather-planner-api.herokuapp.com/
 
 ## <a name="core-details"></a>Core Details
   App Name: Weather Planner
@@ -29,7 +28,7 @@
 
 ## <a name="initial-setup"></a>Initial Setup
   To get started locally:
-  1. Clone the repo found here: ()
+  1. Clone the repo found here: (https://github.com/tfielder/api_weather_planner)
   2. Run `bundle` from the CLI.
   3. Run `rails s`
   4. Navigate to `localhost:3000` in the address bar of your browser.
@@ -95,7 +94,6 @@ testing:
 
 ## <a name="how-to-contribute"></a>How to Contribute
   Drop a line to the creator, or add a Pull Request on GitHub.
-## <a name="schema-design"></a>Schema Design
 
 ## <a name="tech-stack-list"></a>Tech Stack List
 * Ruby 2.4.1
