@@ -89,9 +89,9 @@ testing:
 * 'webmock'
 
 ## <a name="known-issues"></a>Known Issues
-
+None
 ## <a name="running-tests"></a>Running Tests
-
+Run rspec spec from the Command line after running bundle.
 ## <a name="how-to-contribute"></a>How to Contribute
   Drop a line to the creator, or add a Pull Request on GitHub.
 
