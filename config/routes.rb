@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       get '/location_results', to: 'location_results#index'
     end
   end
+  get '/', to: 'home#index'
 end
