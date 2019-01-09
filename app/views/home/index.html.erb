@@ -1,0 +1,98 @@
+<h1>Whetherwise API README</h1>
+<h1>Table of Contents</h1>
+
+<ul>
+  <li>* [Introduction]</li>
+
+  <li>* [Core Details]</li>
+
+  <li>* [Initial Setup]</li>
+
+  <li>* [How to Use]</li>
+
+  <li>* [Dependencies]</li>
+
+  <li>* [Known Issues]</li>
+
+  <li>* [Running Tests]</li>
+
+  <li>* [How To Contribute]</li>
+
+  <li>* [Tech Stack List]</li>
+
+</ul>
+
+<h1>Introduction</h1>
+  <p>Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? The Weather Planner API supports the Weather Planner app that integrates the weather, apparel recommendations based on the weather, and daily events all in one place.</p>
+
+  <p>Visit the api here:</p>
+
+  <p>This app also makes use of the weather planner live app found here: https://whetherwise.herokuapp.com/
+  The backend api repo can be found here: https://github.com/tfielder/api_weather_planner
+  And the backend live api can be found here: https://weather-planner-api.herokuapp.com/</p>
+
+<h1>Core Details</h1>
+  <ul>
+
+  <li>App Name: Weather Planner</li>
+  <li>Last Update: 01/05/19</li>
+  <li>Authors/Contributors: Tim Fielder</li>
+  <li>Version: 1.1.1</li>
+</ul>
+
+<h1>Initial Setup</h1>
+  To get started locally:
+  1. Clone the repo found here: (https://github.com/tfielder/api_weather_planner)
+  2. Run `bundle` from the CLI.
+  3. Run `rails s`
+  4. Navigate to `localhost:3000` in the address bar of your browser.
+
+  <p>
+
+  You will need to register with the Google API Geo service to get an api key.
+  Save your api key after you register and store it as an environment variable called 'google_api_key'.
+  You will need to register with the Dark Sky API service to get an api key.
+  Save your api key after you register and store it as an environment variable called 'dark_sky_api_key'.</p>
+
+
+<h1>How to Use</h1>
+### Endpoints
+<p>
+
+Note: These endpoints may be accessed online. If you are running the project locally, you will need api keys.</p>
+
+1. get 'api/v1/location_results?location=<location of your choice>'
+  Note: this endpoint requires both a Google Geo API key and a Dark Sky API key.
+  The response will be formatted as a json object with a response status of 200 if successful.
+  The main keys are "location" and "weather"
+  e.g. response
+
+<h1>Dependencies</h1>
+Gems:
+* 'faker'
+* 'figaro'
+* 'active_model_serializers'
+* 'faraday'
+* 'rack-cors', require: 'rack/cors'
+
+testing:
+* rspec-rails
+* capybara
+* factory_bot_rails
+* pry
+* shoulda-matchers
+* launchy
+* database_cleaner
+* simplecov
+* 'vcr'
+* 'webmock'
+
+<h1>Known Issues</h1>
+Running Tests
+Run rspec spec from the Command line after running bundle.
+How to Contribute
+  Drop a line to the creator, or add a Pull Request on GitHub.
+
+<h1>Tech Stack List</h1>
+* Ruby 2.4.1
+* Ruby on Rails 5.1
